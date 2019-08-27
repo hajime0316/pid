@@ -15,6 +15,13 @@ Pid::Pid(double Kp, double Ki, double Kd){
     Kd_ = Kd;
 }
 
+Pid::Pid(double Kp, double Ki, double Kd, double loop_time){
+    Kp_ = Kp;
+    Ki_ = Ki;
+    Kd_ = Kd;
+    loop_time_ = loop_time;
+}
+
 Pid::~Pid() {
 }
 
