@@ -53,6 +53,7 @@ class Pid {
     public:
         //コンストラクタ
         Pid(double, double, double);
+        Pid(double, double, double, double);
 
         //デストラクタ
         ~Pid();
