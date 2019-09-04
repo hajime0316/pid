@@ -60,6 +60,9 @@ class Pid {
 
         //PID処理
         double pid_calc(int, int);
+
+        //内部状態のリセット
+        void reset_internal_state();
 };
 
 
