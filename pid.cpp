@@ -52,3 +52,11 @@ double Pid::pid_calc(int enc, int control_data){
     velocity_ = velocity_ + total_error*loop_time_;
     return velocity_;
 }
+
+void Pid::reset_internal_state() {
+    p_error_ = 0;
+    i_error_ = 0;
+    d_error_ = 0;
+    prev_diff_data_ = 0;
+    velocity_ = 0;
+}
